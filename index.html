@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Top 5 Learning Goals</h2>
+    <ol type="I">
+        <li>Master HTML5 Elements</li>
+        <li>Understand Semantic Markup</li>
+        <li>Learn Form Validation</li>
+        <li>Use Multimedia Elements</li>
+        <li>Practice Clean Code</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Inspiration</h2>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+         alt="Mountain Landscape" 
+         width="500">
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jane Doe</td>
+                <td>123 Maple St</td>
+                <td>555-1234</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>456 Oak Ave</td>
+                <td>555-5678</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary Johnson</td>
+                <td>789 Pine Rd</td>
+                <td>555-9012</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>Paul Adams</td>
+                <td>321 Cedar Blvd</td>
+                <td>555-3456</td>
+                <td>paul@example.com</td>
+            </tr>
+            <tr>
+                <td>Lisa Ray</td>
+                <td>654 Birch Ln</td>
+                <td>555-7890</td>
+                <td>lisa@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6"><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="design" name="interests" value="design">
+        <label for="design">Design</label><br>
+        <input type="checkbox" id="gaming" name="interests" value="gaming">
+        <label for="gaming">Gaming</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
